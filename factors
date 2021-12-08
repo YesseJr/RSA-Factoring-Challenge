@@ -1,5 +1,5 @@
-!/usr/bin/env bash
-# read from file given as argv[1] ($1) and print factors for each numin file
+#!/usr/bin/env bash
+# Read from file given as argv[1] ($1) and print factors for each number (NUM) in file
 
 FILE=$1
 
