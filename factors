@@ -1,5 +1,9 @@
-#!/usr/bin/python3
-from factors_functions import *
-if __name__ == '__main__':
+#!/usr/bin/env bash
 
-    print(unix_time(print_factors))
+FILE=$1
+
+while read NUM
+do
+    factors=($(factor $NUM))
+    echo "$NUM=$(($NUM/${factors[1]}))*${factors[1]}"
+done < $FILE
